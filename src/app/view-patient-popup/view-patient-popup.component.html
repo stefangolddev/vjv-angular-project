@@ -1,0 +1,173 @@
+<!-- <mat-toolbar matDialogTitle class="custom-color">
+  <mat-toolbar-row fxLayout="row" fxLayoutAlign="space-between center"> -->
+<!-- <p> View Patient Details
+  <button mat-button (click)="matDialogRef.close()" aria-label="Close dialog">
+    <mat-icon>close</mat-icon>
+  </button></p> -->
+<!-- </mat-toolbar-row>
+</mat-toolbar> -->
+<p> View Patient Details</p>
+<div fxlayoutAlign="center" style="max-height: 500px; overflow-y: scroll;">
+  <h4>Patient Details</h4>
+  <table class="table">
+    <tr>
+      <td class="heading">Patient Name : </td>
+      <td>{{patient.patientName}}</td>
+      <td class="heading">Home Phone : </td>
+      <td>{{patient.homePhone}}</td>
+    </tr>
+
+    <tr>
+      <td class="heading">Address : </td>
+      <td>{{patient.address}}</td>
+      <td class="heading">Office Phone : </td>
+      <td>{{patient.officePhone}}</td>
+    </tr>
+
+    <tr>
+      <td class="heading">Fax : </td>
+      <td>{{patient.fax}}</td>
+      <td class="heading">Birth Date : </td>
+      <td>{{patient.birthDate}}</td>
+    </tr>
+
+    <tr>
+      <td class="heading">status : </td>
+      <td>{{patient.status}}</td>
+      <td class="heading">Gender : </td>
+      <td>{{patient.gender}}</td>
+    </tr>
+
+    <tr>
+      <td class="heading">Marital Status : </td>
+      <td>{{patient.maritalStatus}}</td>
+      <td class="heading">ContactBy : </td>
+      <td>{{patient.contactBy}}</td>
+    </tr>
+
+    <tr>
+      <td class="heading">Race : </td>
+      <td>{{patient.race}}</td>
+      <td class="heading">SocSecNo : </td>
+      <td>{{patient.socSecNo}}</td>
+    </tr>
+
+
+    <tr>
+      <td class="heading">Language : </td>
+      <td>{{patient.language}}</td>
+      <td class="heading">RespProv : </td>
+      <td>{{patient.respProv}}</td>
+    </tr>
+
+    <tr>
+      <td class="heading">MRN : </td>
+      <td>{{patient.mrn}}</td>
+      <td class="heading">ReferredBy : </td>
+      <td>{{patient.referredBy}}</td>
+    </tr>
+
+    <tr>
+      <td class="heading">EmpStatus : </td>
+      <td>{{patient.empStatus}}</td>
+      <td class="heading">Email : </td>
+      <td>{{patient.email}}</td>
+    </tr>
+
+    <tr>
+      <td class="heading">SensChart : </td>
+      <td>{{patient.sensChart}}</td>
+      <td class="heading">HomeLOC : </td>
+      <td>{{patient.homeLOC}}</td>
+    </tr>
+
+    <tr>
+      <td class="heading">ExternalID : </td>
+      <td>{{patient.externalID}}</td>
+      <td class="heading">HomeLOC : </td>
+      <td>{{patient.homeLOC}}</td>
+    </tr>
+
+    <tr>
+      <td class="heading">Problems : </td>
+      <td>{{patient.problems}}</td>
+    </tr>
+
+    <tr>
+      <td class="heading">Medications : </td>
+      <td>{{patient.medications}}</td>
+    </tr>
+  </table>
+  <h4>Review Of Systems</h4>
+  <table class="table">
+    <tr>
+      <td class="heading">general : </td>
+      <td>{{patient.reviewOfSystems.general}}</td>
+      <td class="heading">eyesEarOrNoseOrThroat : </td>
+      <td>{{patient.reviewOfSystems.eyesEarOrNoseOrThroat}}</td>
+    </tr>
+
+    <tr>
+      <td class="heading">cardiovascular : </td>
+      <td>{{patient.reviewOfSystems.cardiovascular}}</td>
+      <td class="heading">gastrointestinalGenitourinary : </td>
+      <td>{{patient.reviewOfSystems.gastrointestinalGenitourinary}}</td>
+    </tr>
+
+    <tr>
+      <td class="heading">musculoskeletal : </td>
+      <td>{{patient.reviewOfSystems.musculoskeletal}}</td>
+      <td class="heading">skin : </td>
+      <td>{{patient.reviewOfSystems.skin}}</td>
+    </tr>
+
+    <tr>
+      <td class="heading">neurologic : </td>
+      <td>{{patient.reviewOfSystems.neurologic}}</td>
+      <td class="heading">psychiatric : </td>
+      <td>{{patient.reviewOfSystems.psychiatric}}</td>
+    </tr>
+
+    <tr>
+      <td class="heading">endocrine : </td>
+      <td>{{patient.reviewOfSystems.endocrine}}</td>
+      <td class="heading">hemeOrLymphatic : </td>
+      <td>{{patient.reviewOfSystems.hemeOrLymphatic}}</td>
+    </tr>
+
+    <tr>
+      <td class="heading">lymphaticAllergicOrImmunologic : </td>
+      <td>{{patient.reviewOfSystems.lymphaticAllergicOrImmunologic}}</td>
+    </tr>
+  </table>
+
+  <h4>Other Details</h4>
+  <table>
+    <tr>
+      <td class="heading">hospitalName : </td>
+      <td>{{patient.hospitalName}}</td>
+      <td class="heading">hospitalFax : </td>
+      <td>{{patient.hospitalFax}}</td>
+    </tr>
+
+    <tr>
+      <td class="heading">hospitalPhone : </td>
+      <td>{{patient.hospitalPhone}}</td>
+    </tr>
+
+    <tr>
+      <td class="heading">Ht : </td>
+      <td>{{patient.ht}}</td>
+      <td class="heading">Wt : </td>
+      <td>{{patient.wt}}</td>
+    </tr>
+
+    <tr>
+      <td class="heading">Rhythm : </td>
+      <td>{{patient.rhythm}}</td>
+      <td class="heading">BP : </td>
+      <td>{{patient.bP}}</td>
+    </tr>
+
+  </table>
+</div>
